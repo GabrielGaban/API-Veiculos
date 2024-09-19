@@ -63,7 +63,7 @@ namespace veiculosAPI.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!ClienteExists(id))
+                if (!ClienteExists(cliente.ClienteID))
                 {
                     return NotFound();
                 }
